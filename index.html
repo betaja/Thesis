@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thesis Project</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Sticky header section that stays at the top during scroll -->
+    <header class="site-header">
+      <div class="header-container">
+        <!--a href is an anchor link to the top of the page-->
+        <a href="#" class="logo-link">
+          <img
+            src="assets/images/daisystudios_logo.png"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+
+        <!-- Navigation bar with anchor links that jump to sections on the page -->
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#grids">Spacing & Grids</a></li>
+            <li><a href="#media">Media Formatting</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--INTRODUCTION SECTION-->
+      <section id="introduction">
+        <!-- Overview of the guide and its purpose -->
+        <p>
+          Welcome to the Daisy Studios Designers Guide. This information is your
+          go-to reference for all things design across the Daisy Studios
+          website. You'll find standards and guidance here for color usage,
+          typography choices, spacing systems, grid layouts, and media
+          formatting. <br /><br />
+          The goal is to keep everything consistent, intentional, and aligned
+          with the Daisy Studios visual identity — helping designers,
+          developers, and collaborators build a cohesive and elegant user
+          experience.
+        </p>
+      </section>
+
+      <!-- Horizontal line for visual separation -->
+      <hr />
+
+      <!--COLORS SECTION-->
+      <section id="colors">
+        <h2>Colors</h2>
+        <!-- Brief explanation of the brand's color system -->
+        <p>
+          The Daisy Studios color palette consists of a bold yellow, deep black,
+          and clean white. These core colors form the foundation of the brand’s
+          identity and are used consistently throughout the website.
+        </p>
+        <!-- Color swatches displayed in a grid layout -->
+        <div class="color-grid">
+          <div class="color-swatch yellow">
+            <span class="color-name">Yellow</span>
+            <span class="hex">#FFB200</span>
+            <span class="rgb">rgb(255, 178, 0)</span>
+          </div>
+
+          <div class="color-swatch black">
+            <span class="color-name">Black</span>
+            <span class="hex">#1A181F</span>
+            <span class="rgb">rgb(26, 24, 31)</span>
+          </div>
+
+          <div class="color-swatch white">
+            <span class="color-name">White</span>
+            <span class="hex">#FFFFFF</span>
+            <span class="rgb">rgb(255, 255, 255)</span>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!--TYPOGRAPHY SECTION-->
+      <section id="typography">
+        <h2>Typography</h2>
+        <!-- Text explaining the typefaces used -->
+        <p>
+          The typography used across the Daisy Studios website is designed for
+          clarity, personality, and visual hierarchy. We use Mona Sans and Mona
+          Sans Expanded to create strong, consistent layouts that reflect our
+          brand identity.
+        </p>
+
+        <!-- Examples of each text style -->
+        <div class="type-example">
+          <h1 class="type-label">Header</h1>
+          <p class="type-info">Mona Sans Expanded, Medium, 120px, Uppercase</p>
+        </div>
+
+        <br /><br />
+
+        <div class="type-example">
+          <h2 class="type-label">Sub-header</h2>
+          <p class="type-info">Mona Sans Expanded, Medium, 56px</p>
+        </div>
+
+        <br /><br />
+
+        <div class="type-example">
+          <p class="sample-paragraph">
+            This is a sample paragraph using Mona Sans Regular at 44px. Use this
+            size for main content areas where readability and visual impact are
+            important.
+          </p>
+          <p class="type-info">Mona Sans, Regular, 44px</p>
+
+          <br /><br />
+
+          <p class="sample-paragraph small">
+            This is a paragraph using Mona Sans Regular at 28px, typically used
+            for smaller text elements like captions or secondary content.
+          </p>
+          <p class="type-info">Mona Sans, Regular, 28px</p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!--SPACING AND GRIDS SECTION-->
+      <section id="grids">
+        <h2>Spacing & Grids</h2>
+        <!-- Description of why spacing and layout matter -->
+        <p>
+          Consistent spacing and structure are essential to maintaining a clean,
+          readable, and well-balanced layout across the Daisy Studios website.
+          This system ensures design clarity and visual harmony, no matter the
+          content or screen size.
+        </p>
+        <br />
+        <p>
+          The website follows a <strong>12-column grid layout</strong> as the
+          foundation for all sections and components. Designers and developers
+          should align all elements to this grid to maintain alignment and
+          modularity throughout the site.
+        </p>
+
+        <!-- Explanation of grid and spacing standards -->
+        <p>
+          All page margins are set to <strong>40px</strong> on both sides. This
+          margin ensures that content has breathing room and does not touch the
+          edges of the screen, especially on smaller devices.
+        </p>
+        <p>
+          To create clear separation and rhythm between sections, a vertical
+          break of <strong>280px</strong> should be maintained. This spacing
+          helps visually distinguish content blocks and allows for a smoother
+          reading experience.
+        </p>
+      </section>
+
+      <hr />
+
+      <!--MEDIA FORMATTING SECTION-->
+      <section id="media">
+        <h2>Media Formatting</h2>
+        <!-- Intro about consistent media formatting -->
+        <p>
+          All media assets on the Daisy Studios website including images and
+          videos follow a consistent formatting system to maintain visual
+          harmony and scalability across all screen sizes.
+        </p>
+        <br />
+
+        <!-- Details about formatting rules -->
+        <!-- The <strong> code section works as a highlighter to make the important parts of the bext bolder and highlighted in yellow -->
+        <p>
+          Every media file is formatted using a
+          <strong>16:9 aspect ratio</strong>, ensuring that visuals display
+          predictably and cleanly in both desktop and mobile environments.
+        </p>
+        <p>
+          There are <strong>four standardized media sizes</strong> used
+          throughout the site, ranging from large hero visuals to small content
+          blocks.
+        </p>
+
+        <p>
+          By adhering to these formatting rules, Daisy Studios ensures media is
+          both brand-consistent and highly adaptable across all platforms and
+          devices.
+        </p>
+      </section>
+
+      <!-- FOOTER SECTION -->
+      <footer class="site-footer">
+        <p>
+          © 2025 Daisy Studios – this guide was built with HTML, CSS, caffeine,
+          and minimal knowledge about coding ;]
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<!--thank you for checking out my code, please don't be hard on me with questions during the oral exam, i will not be able to survive through that (haha, no really)-->

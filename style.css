@@ -1,0 +1,322 @@
+/* ---------- Root Variables ---------- */
+:root {
+  --yellow: #ffb200;
+  --black: #1a181f;
+  --white: #ffffff;
+}
+
+/* ---------- Font Setup ---------- */
+@font-face {
+  font-family: "Mona Sans";
+  src: url("assets/fonts/MonaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona Sans Expanded";
+  src: url("assets/fonts/MonaSans-Expanded-Medium.woff2") format("woff2"); /* Make sure file name matches! */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Typography ---------- */
+h1 {
+  font-family: "Mona Sans Expanded", sans-serif;
+  font-size: 120px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: var(--yellow);
+  cursor: default;
+  transition: color 0.3s ease;
+}
+
+h2 {
+  font-family: "Mona Sans Expanded", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: var(--yellow);
+  cursor: default;
+}
+
+p {
+  font-family: "Mona Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1.6;
+  color: var(--white);
+  text-align: left;
+}
+
+/* ---------- Body Layout ---------- */
+body {
+  margin: 40px;
+  background-color: var(--black);
+  font-family: "Mona Sans", sans-serif;
+}
+
+/* ---------- Header ---------- */
+
+/* scroll to top on logo feature */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-header {
+  position: sticky; /* sticky header */
+  top: 0; /* stick to the top */
+  width: 100%; /* full width */
+  background-color: rgba(26, 24, 31, 0.8); /* semi-transparent background */
+  backdrop-filter: blur(8px); /* blur effect */
+  z-index: 1000; /* ensure it stays on top */
+  padding-top: 36px; /* padding for top */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* bottom border */
+}
+
+.header-container {
+  display: flex; /* flexbox for layout */
+  justify-content: space-between; /* space between items */
+  align-items: center; /* center items vertically */
+  max-width: 1200px; /* max width for header */
+  margin: 0 auto; /* center header */
+  width: 100%; /* full width */
+}
+
+.logo {
+  width: 160px; /* logo width */
+  height: auto; /* auto height */
+  margin: 0; /* no margin */
+  padding: 0; /* no padding */
+  vertical-align: middle; /* align logo vertically */
+}
+
+/* Nav styling */
+.nav-list {
+  list-style: none; /* no bullet points */
+  display: flex; /* flexbox for layout */
+  gap: 40px; /* gap between links */
+  margin: 40px; /* margin for nav */
+  padding: 0; /* no padding */
+  margin-top: 1px; /* was sitting bit lover than the logo, so I manually made it slightly higher */
+}
+
+.nav-list a {
+  color: var(--white); /* anchor link color */
+  text-decoration: none; /* no underline */
+  font-size: 18px; /* font size */
+  transition: color 0.3s ease; /* transition for color change */
+}
+
+.nav-list a:hover {
+  color: var(--yellow); /* hover color */
+  text-decoration: none; /* no underline on hover */
+  cursor: pointer; /* pointer cursor on hover */
+}
+/* ---------- Responsive Navigation ---------- */
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column; /* stack items vertically on smaller displays*/
+    gap: 16px; /* gap between items */
+  }
+
+  .nav-list {
+    flex-direction: column; /* stack nav items vertically on smaller displays*/
+    align-items: center; /* center anchor links on smaller displays*/
+    gap: 16px; /* gap between anchor links */
+  }
+}
+
+/* ---------- Images ---------- */
+img {
+  max-width: 100%; /* responsive images */
+  height: auto; /* auto height */
+  display: block; /* block display */
+}
+
+.logo {
+  width: 200px; /* logo width */
+  margin-bottom: 40px; /* margin bottom */
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding-bottom: 280px; /* padding bottom */
+}
+
+section p {
+  max-width: 1400px; /* max width for paragraphs */
+  line-height: 1.8; /* line height */
+  padding-top: 16px; /* padding top */
+  text-align: left; /* text alignment */
+}
+
+/* ---------- Typography Samples ---------- */
+.type-example {
+  margin-top: 48px; /* margin top */
+  text-align: left; /* text alignment */
+}
+
+.type-label {
+  font-family: "Mona Sans Expanded", sans-serif; /* font family */
+  font-weight: 500; /* font weight */
+  font-size: 120px; /* font size */
+  text-transform: uppercase; /* text always uppercase */
+  color: var(--yellow); /* color */
+  margin-bottom: 8px; /* margin bottom */
+}
+
+h2.type-label {
+  font-size: 56px; /* font size */
+  text-transform: none; /* no text transform */
+}
+
+.sample-paragraph {
+  font-family: "Mona Sans", sans-serif; /* font family */
+  font-weight: 400; /* font weight */
+  font-size: 44px; /* font size */
+  line-height: 1.5; /* line height */
+  color: var(--white); /* color */
+  margin-bottom: 8px; /* margin bottom */
+}
+
+.sample-paragraph.small {
+  font-size: 28px; /* font size */
+  margin-top: 32px; /* margin top */
+}
+
+.type-info {
+  font-size: 16px; /* font size */
+  color: var(--white); /* color */
+  opacity: 0.6; /* opacity */
+  margin-top: 0px; /* margin top */
+}
+
+/* ---------- Color Display ---------- */
+.color-grid {
+  display: flex; /* flexbox for layout */
+  gap: 32px; /* gap between items */
+  margin-top: 24px; /* margin top */
+  flex-wrap: wrap; /* wrap items */
+  justify-content: center; /* center items */
+}
+
+.color-swatch {
+  border-radius: 20px; /* border radius */
+  padding: 16px; /* padding */
+  width: 200px; /* width */
+  text-align: center; /* text alignment */
+  font-family: "Mona Sans", sans-serif; /* font family */
+  color: var(--white); /* text color */
+}
+
+.color-swatch .color-name {
+  display: block; /* block display */
+  font-weight: bold; /* font weight */
+  margin-bottom: 8px; /* margin bottom */
+}
+
+.color-swatch .hex,
+.color-swatch .rgb {
+  font-size: 14px; /* font size */
+  display: block; /* block display */
+  margin: 4px 0; /* margin */
+}
+
+.color-swatch.yellow {
+  background-color: var(--yellow); /* main color */
+  color: var(--black); /* text color */
+}
+
+.color-swatch.black {
+  background-color: var(--black); /* main color */
+  color: var(--white); /* text color */
+  border: 2px solid var(--white); /* border to stand out on dark background*/
+}
+
+.color-swatch.white {
+  background-color: var(--white); /* main color */
+  color: var(--black); /* text color */
+}
+
+/* ---------- Spacing and Grids Section ---------- */
+#grids {
+  margin: 0 auto; /* center section */
+  text-align: left; /* text alignment */
+  padding-top: 64px; /* padding top */
+}
+
+#grids p {
+  font-size: 22px; /* font size */
+  line-height: 1.8; /* line height */
+  margin-bottom: 32px; /* margin bottom */
+}
+
+#grids strong {
+  color: var(--yellow); /* highlight color */
+  font-weight: 500; /* font weight */
+}
+
+/* ---------- Media Formatting ---------- */
+#media {
+  text-align: left; /* text alignment */
+  padding-top: 64px; /* padding top */
+}
+
+#media p {
+  font-size: 22px; /* font size */
+  line-height: 1.8; /* line height */
+  margin-bottom: 32px; /* margin bottom */
+}
+
+#media strong {
+  color: var(--yellow); /* highlight color */
+  font-weight: 500; /* font weight */
+}
+
+.media-sizes {
+  list-style: none; /* no bullet points */
+  padding: 0; /* no padding */
+  margin-bottom: 32px; /* margin bottom */
+}
+
+.media-sizes li {
+  font-size: 20px; /* font size */
+  color: var(--white); /* text color */
+  margin: 8px 0; /* margin */
+}
+
+/* ---------- Divider Styling ---------- */
+
+hr {
+  border: none; /* no border */
+  height: 2px; /* height */
+  background-color: var(--yellow); /* color */
+  opacity: 0.3; /* opacity */
+  width: 100%; /* full width */
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* border line */
+}
+
+.site-footer p {
+  font-size: 12px; /* font size */
+  color: var(--white); /* text color */
+  opacity: 0.5; /* opacity */
+}
+
+/*thank you for checking out my code, please don't be hard on me with questions during the oral exam, i will not be able to survive through that (haha, no really)*/
